@@ -25,10 +25,10 @@ public class ConversionBoard extends AppCompatActivity {
             R.drawable.switzerland2,R.drawable.turkey,R.drawable.uk,R.drawable.ukraine,R.drawable.us};
     String [] currency = {"AUD","EUR","CAD","CNY","DKK","EUR","EUR","INR","ILS","JPY","MXN","NZD","NGN","PLN","KRW",
             "CHF","TRY","GBP","UAH","USD"};
-
+    // An array contain the values of BitCoins in 20 different countries.
     Double [] btcvalues = {7_030.49,4_688.42,6_997.72,36_001.67,39_865.41,4_688.42,4_688.42,345_570.49,19_779.50,665_466.26,
             103_239.93,7_435.84,2_027_366.27,20_420.65,6_518_305.17,5_466.77,20_315.87,4_343.74,139_020.60,5_742.89};
-
+    // An array contain the values of Ethereum in 20 different countries.
     Double [] ethvalues = {421.98,277.41,412.92,2_154.10,2_087.0,277.41,277.41,21_086.20,1_159.0,37_963.60,
             5_999.9,475.0,138_742.69,1_074.80,376_763.25,331.08,1_207.0,240.55,8_275.0,331.31};
     String sign= "",btcsign, ethsign;
@@ -38,6 +38,8 @@ public class ConversionBoard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conversion_board);
+
+
         img1 = (ImageView)findViewById(R.id.imageView1);
         img2 = (ImageView)findViewById(R.id.imageView2);
         tx1 = (TextView)findViewById(R.id.tx1);
@@ -47,7 +49,7 @@ public class ConversionBoard extends AppCompatActivity {
         result =  (TextView)findViewById(R.id.result);
 
 
-
+        // get value passed from CountriesAd which represent the item clicked
         Intent i = getIntent();
         p= i.getIntExtra("key",1);
 
@@ -60,11 +62,10 @@ public class ConversionBoard extends AppCompatActivity {
         img2.setImageResource(mainflag);
         tx2.setText(sign);
 
-
-        Toast.makeText(ConversionBoard.this, String.valueOf(p), Toast.LENGTH_SHORT).show();
     }
 
     public void switcher(View view) {
+        // when ever button swithcher is clicked
         count ++;
         if (count>4){count=1;}
         switch (count){

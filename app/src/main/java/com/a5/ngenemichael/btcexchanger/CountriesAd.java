@@ -17,12 +17,7 @@ import java.util.List;
 public class CountriesAd extends RecyclerView.Adapter<CountriesAd.MyViewHolder>  {
 
     private List<Countries> mCountries;
-    Context mContext;
-    //Class ourc = Class.forName("com.a5.ngenemichael.btcexchanger.ConversionBoard") ;
-    public  int p;
-
-
-
+        // ViewHolder
     public class MyViewHolder extends RecyclerView.ViewHolder implements  View.OnClickListener {
         public TextView name, btc, eth;
         public ImageView cFlag,coinFlag;

@@ -9,6 +9,7 @@ public class Calculator {
     private Double amount, result, btc, eth;
     private Double [] btcArray,ethArray;
     private  int id;
+
     public Calculator(){
 
     }
@@ -20,7 +21,7 @@ public class Calculator {
         this.btcArray= btcarray;
         this.ethArray=etharray;
 
-
+            // Calculates the result depending on the arguement passed
                 switch (id){
                     case 1:
                        result= btcArray[name]*amount;
@@ -38,7 +39,7 @@ public class Calculator {
 
 
     }
-
+    // returns the result to the ConversionBoard
     public Double getResult() {
         return result;
     }
