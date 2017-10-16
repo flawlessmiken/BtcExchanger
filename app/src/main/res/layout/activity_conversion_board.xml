@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.a5.ngenemichael.btcexchanger.ConversionBoard">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100"
+                android:paddingBottom="20dp">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView1"
+                    android:layout_weight="50"
+                    android:src="@drawable/images"/>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="70dp"
+                    android:id="@+id/imageView2"
+                    android:layout_weight="50"
+                    android:src="@drawable/nigeria"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BTC"
+                    android:id="@+id/tx1"
+                    android:layout_weight="33.33"
+                    android:gravity="center"
+                    android:textColor="#000567"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="to"
+                    android:id="@+id/textView4"
+                    android:layout_weight="33.33"
+                    android:gravity="center"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Naira"
+                    android:id="@+id/tx2"
+                    android:layout_weight="33.33"
+                    android:gravity="center"
+                    android:textColor="#7f0000"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="100">
+
+                <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/editText"
+                    android:layout_weight="40"
+                    android:hint="Enter Value"
+                    android:gravity="center"/>
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Convert"
+                    android:id="@+id/convert"
+                    android:layout_weight="60"
+                    android:onClick="calculate"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Result"
+                android:id="@+id/result"
+                android:layout_gravity="center_horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="#000000"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Switch"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:onClick="switcher"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

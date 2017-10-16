@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4b1f09</color>
+    <color name="colorPrimaryDark">#481800</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btc">#999999</color>
+    <color name="name">#222222</color>
+    <color name="eth">#ef4646</color>
+</resources>
