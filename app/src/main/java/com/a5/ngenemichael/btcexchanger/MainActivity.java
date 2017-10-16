@@ -53,7 +53,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void prepareCountries() {
-
         Countries c;
 
         for (int i = 0; i < countries.length; i++) {

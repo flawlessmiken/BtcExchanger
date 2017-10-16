@@ -53,16 +53,7 @@ public class CountriesAd extends RecyclerView.Adapter<CountriesAd.MyViewHolder> 
     @Override
     public MyViewHolder onCreateViewHolder(final ViewGroup parent, final int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.card,parent,false);
-      /* v.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-                Context context = v.getContext();
-               Intent i = new Intent(context,ConversionBoard.class);
-               String ff = String.valueOf()
-               i.putExtra("key",p);
-               context.startActivity(i);
-           }
-       });*/
+
         return new MyViewHolder(v);
     }
 
@@ -84,8 +75,4 @@ public class CountriesAd extends RecyclerView.Adapter<CountriesAd.MyViewHolder> 
     }
 
 
-
-    public void onClick1(int p) {
-
-    }
 }

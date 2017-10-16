@@ -7,7 +7,6 @@ public class Countries {
         private String name, Btc, Eth;
         private  int cFlag, coinFlag;
     public Countries(){
-
     }
     public Countries(String name, String Btc, String Eth, int cFlag, int coinFlag){
         this.name = name;

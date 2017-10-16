@@ -47,6 +47,7 @@ public class ConversionBoard extends AppCompatActivity {
         result =  (TextView)findViewById(R.id.result);
 
 
+
         Intent i = getIntent();
         p= i.getIntExtra("key",1);
 
