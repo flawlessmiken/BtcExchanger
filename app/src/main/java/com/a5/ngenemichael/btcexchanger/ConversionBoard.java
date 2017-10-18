@@ -13,6 +13,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DecimalFormat;
+
 public class ConversionBoard extends AppCompatActivity {
     int p, count =1,mainflag,bitcoinflag,ethflag;
     ImageView img1, img2;
@@ -122,7 +124,9 @@ public class ConversionBoard extends AppCompatActivity {
         }else{
         Double amount = Double.parseDouble(edt.getText().toString());
         Calculator calculator = new Calculator(p,amount,count,btcvalues,ethvalues);
-        result.setText(calculator.getResult().toString()+" "+s);
+            DecimalFormat format = new DecimalFormat("#,###.######");
+            String f = format.format(calculator.getResult());
+            result.setText(f+" "+s);
         }
     }
 }

@@ -19,7 +19,8 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:padding="2dp">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -40,7 +41,7 @@
                     android:layout_height="70dp"
                     android:id="@+id/imageView2"
                     android:layout_weight="50"
-                    android:src="@drawable/nigeria"/>
+                    />
             </LinearLayout>
 
             <LinearLayout
@@ -56,7 +57,7 @@
                     android:id="@+id/tx1"
                     android:layout_weight="33.33"
                     android:gravity="center"
-                    android:textColor="#000567"/>
+                    android:textColor="#3a43ff"/>
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -65,7 +66,7 @@
                     android:id="@+id/textView4"
                     android:layout_weight="33.33"
                     android:gravity="center"
-                    android:textColor="#ffffff"/>
+                    android:textColor="#ffe600"/>
 
                 <TextView
                     android:layout_width="fill_parent"
@@ -74,7 +75,7 @@
                     android:id="@+id/tx2"
                     android:layout_weight="33.33"
                     android:gravity="center"
-                    android:textColor="#7f0000"/>
+                    android:textColor="#ff2121"/>
             </LinearLayout>
 
             <LinearLayout
@@ -126,5 +127,13 @@
 
         </LinearLayout>
     </ScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#862400">
+    </LinearLayout>
 
 </LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context="com.a5.ngenemichael.btcexchanger.StartUpScreen"
+    android:background="#cecece"
+    android:gravity="center">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bgs"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:background="#e0ffffff"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="100dp"
+            android:id="@+id/logo"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/logo12"
+            android:elevation="25dp"
+            android:paddingBottom="20dp"
+            android:foregroundTint="#717171"
+            android:focusable="true"
+            android:focusableInTouchMode="false"
+            style="@style/AlertDialog.AppCompat.Light"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#e0ffffff">
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="FlawlessMike BtcXchanger"
+            android:id="@+id/textView5"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="normal"
+            android:textColor="#402300"
+            android:background="@drawable/round"
+            android:gravity="center"
+            android:padding="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="bottom|end"
+        android:background="@drawable/bgs"
+        android:padding="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="powered by flawless Apps"
+            android:id="@+id/textView6"
+            android:layout_gravity="right"
+            android:textColor="#3e1c00"
+            android:textStyle="italic"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

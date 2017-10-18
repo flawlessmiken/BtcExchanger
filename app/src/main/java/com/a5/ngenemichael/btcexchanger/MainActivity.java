@@ -7,6 +7,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -63,9 +64,10 @@ public class MainActivity extends AppCompatActivity {
     private void prepareCountries() {
         Countries c;
         // Saving the Countries their btc values and Ethereum values in to a list
+        DecimalFormat format = new DecimalFormat("#,###.######");
         for (int i = 0; i < countries.length; i++) {
-            c = new  Countries(countries[i],"BTC/"+currency[i]+": "+String.valueOf(btcvalues[i]),
-                   "ETH/"+currency[i]+": "+String.valueOf(ethvalues[i]),flags[i],flags[i]);
+            c = new  Countries(countries[i],"BTC/"+currency[i]+": "+String.valueOf(format.format(btcvalues[i])),
+                   "ETH/"+currency[i]+": "+String.valueOf(format.format(ethvalues[i])),flags[i],flags[i]);
             mCountries.add(c);
         }
         cAdapter.notifyDataSetChanged();
