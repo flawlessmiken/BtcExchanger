@@ -121,7 +121,9 @@ public class ConversionBoard extends AppCompatActivity {
 
         if(TextUtils.isEmpty(edt.getText().toString())){
             Toast.makeText(ConversionBoard.this, "Enter a Value", Toast.LENGTH_SHORT).show();
-        }else{
+        }else if(edt.getText().toString()=="."){
+            Toast.makeText(ConversionBoard.this, "invalid Value", Toast.LENGTH_SHORT).show();
+        }else {
         Double amount = Double.parseDouble(edt.getText().toString());
         Calculator calculator = new Calculator(p,amount,count,btcvalues,ethvalues);
             DecimalFormat format = new DecimalFormat("#,###.######");

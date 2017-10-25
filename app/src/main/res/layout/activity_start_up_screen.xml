@@ -7,7 +7,7 @@
     android:padding="8dp"
     android:orientation="vertical"
     tools:context="com.a5.ngenemichael.btcexchanger.StartUpScreen"
-    android:background="#cecece"
+    android:background="#481801"
     android:gravity="center">
 
     <LinearLayout
@@ -23,28 +23,30 @@
         android:layout_height="fill_parent"
         android:layout_weight="1"
         android:gravity="center"
-        android:background="#e0ffffff"
+        android:background="#ffd16f"
         android:padding="20dp">
 
         <ImageView
-            android:layout_width="120dp"
+            android:layout_width="100dp"
             android:layout_height="100dp"
             android:id="@+id/logo"
             android:layout_gravity="center_horizontal"
-            android:background="@drawable/logo12"
+            android:background="@drawable/bgs"
             android:elevation="25dp"
             android:paddingBottom="20dp"
             android:foregroundTint="#717171"
             android:focusable="true"
             android:focusableInTouchMode="false"
-            style="@style/AlertDialog.AppCompat.Light"/>
+            style="@style/AlertDialog.AppCompat.Light"
+            android:paddingTop="20dp"
+            android:src="@drawable/logo12"/>
 
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="10dp"
             android:layout_gravity="center_horizontal"
-            android:background="#e0ffffff">
+            android:background="#de4620">
         </LinearLayout>
 
         <TextView
@@ -59,6 +61,7 @@
             android:background="@drawable/round"
             android:gravity="center"
             android:padding="4dp"/>
+
     </LinearLayout>
 
     <LinearLayout
