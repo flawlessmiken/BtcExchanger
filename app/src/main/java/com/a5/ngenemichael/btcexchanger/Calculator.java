@@ -9,7 +9,8 @@ public class Calculator {
     private Double amount, result, btc, eth;
     private Double [] btcArray,ethArray;
     private  int id;
-
+    
+    //The Object Class
     public Calculator(){
 
     }
